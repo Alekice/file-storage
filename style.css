@@ -104,6 +104,32 @@ body {
 .main {
     background-image: url(./assets/img/forest.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-play {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 160px;
+    border: none;
+    background-color: transparent;
+    background-image: url(./assets/svg/play.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button-play:hover {
+    filter: brightness(.85);
+}
+
+.button-play:focus {
+    border: none;
 }
 
 /******** FOOTER ********/
