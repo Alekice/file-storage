@@ -96,3 +96,9 @@ body {
     padding-right: 0;
 }
 
+/******** HEADER ********/
+
+.main {
+    background-image: url(./assets/img/forest.jpg);
+    background-size: cover;
+}
