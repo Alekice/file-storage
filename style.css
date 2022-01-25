@@ -42,18 +42,7 @@ body {
     padding: 5px 20px;
 }
 
-/******** HEADER ********/
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
-    width: 50px;
-    height: 50px;
-    background-image: url(./assets/svg/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,9 +58,23 @@ body {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
-
 .logo.active:hover {
     filter: none;
+}
+
+/******** HEADER ********/
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/svg/logo.svg);
+   
 }
 
 .nav-list {
@@ -101,4 +104,39 @@ body {
 .main {
     background-image: url(./assets/img/forest.jpg);
     background-size: cover;
+}
+
+/******** FOOTER ********/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-data {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-data__text {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+.github-link {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.github-link:hover {
+    color: var(--gold);
+}
+
+.rss-logo {
+    width: 135px;
+    height: 50px;
+    background-image: url(./assets/svg/rss.svg);
 }
