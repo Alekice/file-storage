@@ -2,10 +2,12 @@
 
 const btn = document.querySelector('.button');
 const audio = document.querySelector('.audio');
+const shadow = document.querySelector('.shadow');;
 let isPlay = false;
 
 function playAudio() {
     isPlay = true;
+    shadow.classList.remove('active');
     btn.classList.add('pause');
     audio.currentTime = 0;
     audio.play();
@@ -13,6 +15,7 @@ function playAudio() {
 
 function pauseAudio() {
     isPlay = false;
+    shadow.classList.add('active');
     btn.classList.remove('pause');
     audio.pause();
 }
